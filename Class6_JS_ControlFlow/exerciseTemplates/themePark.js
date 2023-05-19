@@ -61,7 +61,5 @@ function listAllAttractions(attractions){
     // YOUR CODE HERE
 }
 // EXAMPLE USAGE
-let attractions1 = [];
-let attractions2 = [];
-listNextAttraction(arr1); // output: "Attractions for the day: roller coaster, water ride, haunted house, "
-lsitNextAttraction(arr2); // output: "Attractions for the day: ferris wheel, video game arcade, teacup ride, " 
+listAllAttractions(arr1); // output: "Attractions for the day: roller coaster, water ride, haunted house, "
+lsitAllAttractions(arr2); // output: "Attractions for the day: ferris wheel, video game arcade, teacup ride, " 
