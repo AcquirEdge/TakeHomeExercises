@@ -9,9 +9,9 @@ function dayByDay(day){
     // YOUR CODE HERE
 }
 // EXAMPLE USAGE
-dayByDay('Monday'); // output: "Ride the water ride"
-dayByDay('Wednesday'); // output: "Go to the haunted house"
-dayByDay('Friday'); // output: "Free exploration day"
+console.log(dayByDay('Monday')); // output: "Ride the water ride"
+console.log(dayByDay('Wednesday')); // output: "Go to the haunted house"
+console.log(dayByDay('Friday')); // output: "Free exploration day"
 
 function rideTillDizzy(maxDizziness){
     // YOUR CODE HERE
@@ -23,6 +23,7 @@ rideTillDizzy(1); // output: prints out "Riding the roller coaster" 1 time
 rideTillDizzy(0); // output: prints out "Riding the roller coaster" 0 times
 
 function rideAttraction(maxWaitTime){
+    let currentWaitTime = 20;
     // YOUR CODE HERE
 }
 // EXAMPLE USAGE
@@ -56,11 +57,11 @@ let ratings2 = {
 listAttractionRatings(ratings1); // output: "The attraction [attraction] has a rating of [rating number]" for each attraction in the object
 listAttractionRatings(ratings2); // output: "The attraction [attraction] has a rating of [rating number]" for each attraction in the object
  
-function listNextAttraction(attractions){
+function listAllAttractions(attractions){
     // YOUR CODE HERE
 }
 // EXAMPLE USAGE
 let attractions1 = [];
 let attractions2 = [];
-listNextAttraction(arr1); // output: Prints out "The next attraction is [attraction]" for all 3 attractions
-lsitNextAttraction(arr2); // output: Prints out "The next attraction is [attraction]" for all 3 attractions
+listNextAttraction(arr1); // output: "Attractions for the day: roller coaster, water ride, haunted house, "
+lsitNextAttraction(arr2); // output: "Attractions for the day: ferris wheel, video game arcade, teacup ride, " 
