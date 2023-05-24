@@ -44,3 +44,17 @@ function logPositive(number) {
 // console.log(logPositive(-5)); // Expected output: Error: 'Number is negative'
 // console.log(logPositive(0)); // Expected output: 0
 // console.log(logPositive(10)); // Expected output: 10
+
+
+// Exercise 5 - The function should take an array and an index as arguments. 
+// The function should try to access the element of the array at the provided index and return it. 
+// If the index is out of bounds (i.e., the index is less than 0 or greater than or equal to the 
+// length of the array), it should catch the error and return "Index out of bounds".
+
+function safeAccess(array, index) {
+    // your code here
+}
+
+// Sample invocations:
+// console.log(safeAccess([1,2,3,4,5], 2)); // expected output: 3
+// console.log(safeAccess([1,2,3,4,5], 10)); // expected output: "Index out of bounds"
