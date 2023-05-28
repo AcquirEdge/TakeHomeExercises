@@ -17,6 +17,9 @@ function checkPositive(number) {
 // Exercise 2: Write a function that calculates the area of a rectangle. 
 // It should log an error if either length or width is negative
 function calculateArea(length, width) {
+    if(typeof length !== "number" || typeof width != "number"){
+        throw "Dimensions should be numbers"
+    }
     if (length < 0 || width < 0) {
         throw "Dimensions should be positive"
     }
@@ -43,19 +46,21 @@ function safeDivide(numerator, denominator) {
 // console.log(safeDivide(15, 3)); // Expected output: 5
 // console.log(safeDivide(8, 2)); // Expected output: 4
 
-// Exercise 4: Write a function that logs a number if it is positive, but throws an error if it's negative
+// Exercise 4: Write a function that logs a number if it is positive, but logs an error if it's negative
+// Use a try...catch block to implement this
 function logPositive(number) {
-    if (number < 0) {
-        throw "Number is negative";
+    try{    
+        console.log(checkPositive(number));
+    } catch(err){
+        console.log(err)
     }
-    return number;
 }
 
 // Sample invocations:
-// console.log(logPositive(5)); // Expected output: 5
-// console.log(logPositive(-5)); // Expected output: Error: 'Number is negative'
-// console.log(logPositive(0)); // Expected output: 0
-// console.log(logPositive(10)); // Expected output: 10
+// logPositive(5); // Expected output: 5
+// logPositive(-5); // Expected output: 'Number is negative'
+// logPositive(0); // Expected output: 0
+// logPositive(10); // Expected output: 10
 
 
 // Exercise 5 - The function should take an array and an index as arguments. 
@@ -75,5 +80,5 @@ function safeAccess(array, index) {
 }
 
 // Sample invocations:
-// console.log(safeAccess([1,2,3,4,5], 2)); // expected output: 3
-// console.log(safeAccess([1,2,3,4,5], 10)); // expected output: "Index out of bounds"
+console.log(safeAccess([1,2,3,4,5], 2)); // expected output: 3
+console.log(safeAccess([1,2,3,4,5], 10)); // expected output: "Index out of bounds"

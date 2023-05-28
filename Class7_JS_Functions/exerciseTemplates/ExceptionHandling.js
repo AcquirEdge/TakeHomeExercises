@@ -12,7 +12,7 @@ function checkPositive(number) {
 // console.log(checkPositive(100)); // Expected output: 100
 
 // Exercise 2: Write a function that calculates the area of a rectangle. 
-// It should throw an error if either length or width is negative
+// It should throw an error if either length or width is negative or if length or width is not a number.
 function calculateArea(length, width) {
     // implement your code here
 }
@@ -34,7 +34,8 @@ function safeDivide(numerator, denominator) {
 // console.log(safeDivide(15, 3)); // Expected output: 5
 // console.log(safeDivide(8, 2)); // Expected output: 4
 
-// Exercise 4: Write a function that logs a number if it is positive, but throws an error if it's negative
+// Exercise 4: Write a function that logs a number if it is positive, but logs an error if it's negative
+// Use a try...catch block to implement this
 function logPositive(number) {
     // implement your code here
 }

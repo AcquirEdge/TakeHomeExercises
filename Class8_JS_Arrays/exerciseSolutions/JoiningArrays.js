@@ -1,7 +1,7 @@
 // Exercise 1: joinArrayToString
 // This function converts a given array into a string using the JavaScript `join()` method.
 function joinArrayToString(array, separator) {
-    // Your code goes here
+    return array.join(separator);
   }
   
   console.log(joinArrayToString(['Hello', 'World'], ' ')); // Expected output: "Hello World"
@@ -12,7 +12,7 @@ function joinArrayToString(array, separator) {
   // Exercise 2: joinTwoArrays
   // This function combines two given arrays into one using the JavaScript `concat()` method.
   function joinTwoArrays(array1, array2) {
-    // Your code goes here
+    return array1.concat(array2);
   }
   
   console.log(joinTwoArrays(['Hello', 'World'], ['Hola', 'Mundo'])); // Expected output: ['Hello', 'World', 'Hola', 'Mundo']
@@ -23,7 +23,7 @@ function joinArrayToString(array, separator) {
   // Exercise 3: concatThreeArrays
   // The goal of this function is to join three given arrays into one using the `concat()` method.
   function concatThreeArrays(array1, array2, array3) {
-    // Your code goes here
+    return array1.concat(array2).concat(array3);
   }
   
   console.log(concatThreeArrays(['Hello', 'World'], ['Hola', 'Mundo'], ['Bonjour', 'Monde'])); // Expected output: ['Hello', 'World', 'Hola', 'Mundo', 'Bonjour', 'Monde']
@@ -34,7 +34,7 @@ function joinArrayToString(array, separator) {
   // Exercise 4: joinThreeArrays
   // This function is designed to convert three given arrays into a string using the `join()` method.
   function joinThreeArrays(array1, array2, array3, separator) {
-    // Your code goes here
+    return array1.concat(array2).concat(array3).join(separator);
   }
   
   console.log(joinThreeArrays(['Hello', 'World'], ['Hola', 'Mundo'], ['Bonjour', 'Monde'], ' ')); // Expected output: "Hello World Hola Mundo Bonjour Monde"
@@ -45,7 +45,9 @@ function joinArrayToString(array, separator) {
   // Exercise 5: joinWithShiftedElement
   // This function combines two given arrays into a string after performing some operations on the arrays.
   function joinWithShiftedElement(array1, array2, separator) {
-    // Your code goes here
+    array1.push(array1.shift())
+    array2.push(array2.shift())
+    return array1.concat(array2).join(separator);
   }
   
   console.log(joinWithShiftedElement(['Hello', 'World'], ['Hola', 'Mundo'], ' ')); // Expected output: "World Hello Mundo Hola"
@@ -56,7 +58,8 @@ function joinArrayToString(array, separator) {
   // Exercise 6: concatWithPoppedElement
   // The purpose of this function is to join two given arrays into one after performing some operations.
   function concatWithPoppedElement(array1, array2) {
-    // Your code goes here
+    array2.pop()
+    return array1.concat(array2)
   }
   
   console.log(concatWithPoppedElement(['Hello', 'World'], ['Hola', 'Mundo'])); // Expected output: ['Hello', 'World', 'Hola']
@@ -67,7 +70,8 @@ function joinArrayToString(array, separator) {
   // Exercise 7: joinAndUnshift
   // This function combines two given arrays into a string after performing some operations on the arrays.
   function joinAndUnshift(array1, array2, separator, element) {
-    // Your code goes here
+    array1.unshift(element);
+    return array1.concat(array2).join(separator);
   }
   
   console.log(joinAndUnshift(['Hello', 'World'], ['Hola', 'Mundo'], ' ', 'Hi')); // Expected output: "Hi Hello World Hola Mundo"
@@ -78,7 +82,9 @@ function joinArrayToString(array, separator) {
   // Exercise 8: concatAndPush
   // The goal of this function is to join two given arrays into one and then add a given element to the end of the final array.
   function concatAndPush(array1, array2, element) {
-    // Your code goes here
+    let concated = array1.concat(array2);
+    concated.push(element);
+    return concated;
   }
   
   console.log(concatAndPush(['Hello', 'World'], ['Hola', 'Mundo'], 'Hi')); // Expected output: [ 'Hello', 'World', 'Hola', 'Mundo', 'Hi' ]

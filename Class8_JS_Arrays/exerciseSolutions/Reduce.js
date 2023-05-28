@@ -2,7 +2,9 @@
 // Write a function that takes an array of numbers as a parameter
 // Use the reduce() method to calculate and return the sum of all elements in the array
 function sumArray(array) {
-  // TODO: Implement your code here
+  return array.reduce((sum, element) => {
+    return sum += element;
+  })
 }
 
 // Sample usage
@@ -14,7 +16,9 @@ console.log(sumArray([-1, 0, 1])); // Output: 0
 // Write a function that takes an array of numbers as a parameter
 // Use the reduce() method to find and return the maximum value in the array
 function findMax(array) {
-  // TODO: Implement your code here
+  return array.reduce((max, element) => {
+    return element > max ? element: max;
+  })
 }
 
 // Sample usage
@@ -26,7 +30,12 @@ console.log(findMax([-1, -5, -3])); // Output: -1
 // Write a function that takes an array of strings as a parameter
 // Use the reduce() method to count and return the number of occurrences of a specific string in the array
 function countOccurrences(array, searchString) {
-  // TODO: Implement your code here
+  return array.reduce((count, element) => {
+    if(element === searchString){
+      return count += 1;
+    }
+    return count;
+  }, 0)
 }
 
 // Sample usage
@@ -40,7 +49,9 @@ console.log(countOccurrences(["apple", "banana", "orange"], "grape")); // Output
 // Write a function that takes an array of strings as a parameter
 // Use the reduce() method to concatenate all elements in the array and return the resulting string
 function concatenateArray(array) {
-  // TODO: Implement your code here
+  return array.reduce((result, element) => {
+    return result += element;
+  })
 }
 
 // Sample usage

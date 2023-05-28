@@ -4,7 +4,9 @@
 // Returns: undefined
 
 function iterateAndLog(array) {
-    // Write your code here
+    array.forEach((element) => {
+      console.log(element);
+    })
   }
   
   // Sample usage 1
@@ -37,7 +39,11 @@ function iterateAndLog(array) {
   // Returns: undefined
   
   function logEvenElements(array) {
-    // Write your code here
+    array.forEach((element) => {
+      if(element % 2 === 0){
+        console.log(element);
+      }
+    })
   }
   
   // Sample usage 1
@@ -67,7 +73,9 @@ function iterateAndLog(array) {
   // Returns: new array (array)
   
   function doubleElements(array) {
-    // Write your code here
+    return array.map((element) => {
+      return element * 2;
+    })
   }
   
   // Sample usage 1
@@ -92,7 +100,9 @@ function iterateAndLog(array) {
   // Returns: new array (array)
   
   function filterOddNumbers(array) {
-    // Write your code here
+    return array.filter((element) => {
+      return element % 2 === 1;
+    })
   }
   
   // Sample usage 1
@@ -117,7 +127,9 @@ function iterateAndLog(array) {
   // Returns: new array (array)
   
   function filterShortWords(array) {
-    // Write your code here
+    return array.filter((element) => {
+      return element.length <= 3;
+    })
   }
   
   // Sample usage 1
@@ -142,7 +154,13 @@ function iterateAndLog(array) {
 // Returns: new array (array)
 
 function doubleEvenFilterOdd(array) {
-    // Write your code here
+    let filtered = array.filter((element) => {
+      return element % 2 == 0;
+    })
+    let doubledEvens = filtered.map((element) => {
+      return element * 2;
+    }) 
+    return doubledEvens;
   }
   
   // Sample usage 1

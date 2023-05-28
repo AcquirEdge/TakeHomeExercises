@@ -1,6 +1,6 @@
 // VariableScope.js
 
-// Exercise 1: Write a function that modifies a global variable. 
+// Exercise 1: Write a function that modifies a global variable by adding 10 to it. 
 // Observe how this modification affects the global scope.
 
   let globalVar1 = 0;
