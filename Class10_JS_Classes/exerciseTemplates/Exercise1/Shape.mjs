@@ -14,7 +14,7 @@ export default class Shape {
      * @param {string} color - The color of the shape.
      */
     constructor(color) {
-      // TODO: Initialize the _color property
+      // TODO: Initialize the color property
     }
   
     /**

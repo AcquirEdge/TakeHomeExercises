@@ -1,6 +1,6 @@
 /**
  * EXERCISE 1 - Triangle class
- * The Triangle class is a subclass of Shape representing an equilateral triangle.
+ * The Triangle class is a subclass of Shape representing a triangle.
  * Properties:
  * - color: a string representing the color of the triangle (inherited from Shape).
  * - length: number representing the length of the triangle
@@ -21,7 +21,7 @@ export default class Triangle extends Shape {
    * @param {number} height - the height of the triangle
    */
   constructor(color, length, height) {
-    // TODO: Initialize the color and side properties
+    // TODO: Initialize the color, length, and height properties
   }
 
   /**

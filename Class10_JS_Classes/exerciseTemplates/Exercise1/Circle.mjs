@@ -40,10 +40,10 @@ export default class Circle extends Shape {
   }
 
   /**
-   * Calculate the area of the circle.
+   * Calculate the circumference of the circle.
    *
    * @param {number} radius The radius of the circle
-   * @returns {number} The area of the circle.
+   * @returns {number} The circumference of the circle.
    */
   static circumference(radius) {
     // Parameters: radius (number)
