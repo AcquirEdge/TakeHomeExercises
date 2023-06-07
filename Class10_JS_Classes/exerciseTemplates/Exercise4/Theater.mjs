@@ -36,7 +36,7 @@ export default class Theater {
   }
 
   /**
-   * Removes a movie from the collection.
+   * Removes a movie with the given title from the collection.
    * @param {string} title - The title of the movie to remove.
    */
   removeMovie(title) {

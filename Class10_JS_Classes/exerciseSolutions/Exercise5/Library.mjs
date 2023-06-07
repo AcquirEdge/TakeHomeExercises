@@ -44,7 +44,9 @@ export default class Library {
    * @param {string} title - The title of the album to remove.
    */
   removeAlbum(title) {
-    this.#albums = this.#albums.filter(album => album.title !== title);
+    this.#albums = this.#albums.filter((album) => {
+      return album.title !== title
+    });
   }
 
   /**
@@ -53,7 +55,11 @@ export default class Library {
    * @returns {Album[]} An array of album details objects by the given artist.
    */
   getAlbumsByArtist(artist) {
-    return this.#albums.filter(album => album.artist === artist).map((album) => album.details);
+    return this.#albums.filter((album) => {
+      return album.artist === artist
+    }).map((album) => {
+      return album.details
+    });
   }
 
   /**
@@ -62,7 +68,11 @@ export default class Library {
    * @returns {Album[]} An array of album details objects in the given genre.
    */
   getAlbumsByGenre(genre) {
-    return this.#albums.filter(album => album.genre === genre).map((album) => album.details);
+    return this.#albums.filter((album) => {
+      return album.genre === genre
+    }).map((album) => {
+      return album.details
+    });
   }
 
   /**
@@ -72,13 +82,19 @@ export default class Library {
    * @returns {Album[]} An array of album details objects released within the given year range.
    */
   getAlbumsByYearRange(startYear, endYear) {
-    return this.#albums.filter(album => album.year >= startYear && album.year <= endYear).map((album) => album.details);
+    return this.#albums.filter((album) => {
+      return album.year >= startYear && album.year <= endYear
+    }).map((album) => {
+      return album.details
+    });
   }
 
   /**
    * Log the details of all albums in the library.
    */
   listAlbums() {
-    this.#albums.forEach((album) => console.log(album.details));
+    this.#albums.forEach((album) => {
+      console.log(album.details)
+    });
   }
 }

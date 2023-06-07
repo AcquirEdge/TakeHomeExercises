@@ -22,8 +22,8 @@ theater.addMovie(movie2);
 theater.addMovie(movie3);
 
 // Test functionality
-console.log(theater.findMovie('Inception')); // should print: Movie { _title: 'Inception', _duration: 148, _director: 'Christopher Nolan' }
-console.log(theater.findMovie('The Shawshank Redemption')); // should print: Movie { _title: 'The Shawshank Redemption', _duration: 142, _director: 'Frank Darabont' }
+console.log(theater.findMovie('Inception')); // should print: Movie { title: 'Inception', duration: 148, director: 'Christopher Nolan' }
+console.log(theater.findMovie('The Shawshank Redemption')); // should print: Movie { title: 'The Shawshank Redemption', duration: 142, director: 'Frank Darabont' }
 
 console.log(theater.getTotalDuration()); // should print: 444 (148 + 142 + 154)
 

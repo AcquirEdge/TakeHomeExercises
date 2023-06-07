@@ -40,11 +40,13 @@ export default class Theater {
   }
 
   /**
-   * Removes a movie from the collection.
+   * Removes a movie with the given title from the collection.
    * @param {string} title - The title of the movie to remove.
    */
   removeMovie(title) {
-    this.#movies = this.#movies.filter(movie => movie.title !== title);
+    this.#movies = this.#movies.filter((movie) => {
+      return movie.title !== title
+    });
   }
 
   /**
@@ -53,7 +55,9 @@ export default class Theater {
    * @returns {Object|null} The found movie.details or null if not found.
    */
   findMovie(title) {
-    let foundMovie = this.#movies.find(movie => movie.title === title);
+    let foundMovie = this.#movies.find((movie) => {
+      return movie.title === title
+    });
     if(foundMovie){
       return foundMovie.details
     } else {
@@ -67,7 +71,9 @@ export default class Theater {
    */
   getTotalDuration() {
     let totalDuration = 0;
-    this.#movies.forEach(movie => totalDuration += movie.duration);
+    this.#movies.forEach((movie) => {
+      totalDuration += movie.duration
+    });
     return totalDuration;
   }
 }
