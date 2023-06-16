@@ -1,0 +1,19 @@
+Building the HTML document
+
+You are required to create an HTML document representing a blog post. Please structure your HTML as follows:
+
+- A `<header>` containing:
+  - An `<h1>` element for the blog title. Assign an id of `blogTitle`.
+  - A `<p>` element for the author name. Assign an id of `authorName`.
+  - A `<p>` element for the date of the post. Assign an id of `postDate`.
+
+- A `<main>` containing:
+  - Several `<p>` elements to represent the blog post content.
+
+- A `<footer>` containing:
+  - An `<h2>` element with the text "Comments".
+  - A `<section>` for comments. Within this `<section>`, create three `<article>` elements. Each `<article>` represents a comment and should contain:
+    - A `<h3>` element for the comment author's username. Assign a class of `commentUser`.
+    - A `<p>` element for the comment content.
+
+Remember, you will need to properly link your JavaScript file to your HTML file. Make sure to test your functions in the browser to ensure they're working as expected.

@@ -1,0 +1,24 @@
+**Exercise 1: Basic HTML Structure**
+
+Prompt: 
+
+For this exercise, you are to create a simple HTML document that includes a variety of elements. Your document should include the following:
+
+- A title element with the text "My First HTML Document".
+- A header element (`<h1>`) with the id "header" and the text "Welcome to My Website".
+- Two paragraph elements (`<p>`), with the ids "paragraph1" and "paragraph2" and containing some sample text.
+- An unordered list (`<ul>`) with the id "myList", containing three list items (`<li>`).
+
+Your HTML should be properly formatted and indented. This exercise is designed to help you review how to create a basic HTML document and to understand how HTML structure corresponds to the DOM structure. 
+
+(I could include some questions on DOM Trees. After creating the HTML Document create a dom tree in the below format)
+
+-HTML
+    -Element: head
+        -Element: title
+            -Text: My First HTML Document
+    -Element: body
+        -Element: h1   
+            -Text: Welcome to MyWebsite
+            -Attribute: id: 'header'
+... etc etc

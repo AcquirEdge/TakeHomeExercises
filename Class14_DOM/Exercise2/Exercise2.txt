@@ -1,0 +1,13 @@
+**Exercise 2: Nested Elements**
+
+Prompt: 
+
+In this exercise, you will build upon your knowledge of HTML elements to create a more complex structure. Specifically, you will practice nesting elements within other elements. Your HTML document should include the following:
+
+- A `<div>` element with the id "myDiv".
+- Inside this `<div>` element:
+    - A header element (`<h1>`) with some sample text.
+    - Two paragraph elements (`<p>`), each containing some sample text. 
+    - In the second paragraph, include some text that is bolded using the `<b>` element. 
+
+Remember to correctly nest and properly indent your HTML. This exercise will give you a better understanding of how the DOM tree is formed when elements are nested inside one another in an HTML document.
