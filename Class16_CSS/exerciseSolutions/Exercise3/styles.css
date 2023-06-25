@@ -1,0 +1,4 @@
+/* Use the 'border' property to add a 2px solid blue border around the div with class 'add-border'. */
+.add-border {
+    border: 2px solid blue;
+}

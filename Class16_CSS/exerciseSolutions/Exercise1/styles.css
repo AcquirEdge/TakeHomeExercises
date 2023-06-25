@@ -1,0 +1,4 @@
+/* Use the 'color' property to change the color of the text in the paragraph with class 'change-color' to red. */
+.change-color {
+  color: red;
+}

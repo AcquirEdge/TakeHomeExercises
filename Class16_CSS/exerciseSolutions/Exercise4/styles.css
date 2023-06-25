@@ -1,0 +1,4 @@
+/* Look up the CSS property for center aligning text and apply it elements with the paragraph tag */
+p {
+    text-align: center;
+}
